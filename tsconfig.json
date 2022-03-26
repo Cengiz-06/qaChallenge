@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "types": ["cypress","cypress-file-upload","cypress-real-events","node"],
+    "target": "ES2019",
+    "lib": [
+      "es2019",
+      "dom",
+      "scripthost"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "inlineSourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "strict": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+   }
+}

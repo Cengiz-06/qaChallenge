@@ -1,0 +1,19 @@
+{
+  "watchForFileChanges":false,
+  "chromeWebSecurity": false,
+  "testFiles": "**/*.feature",
+  "modifyObstructiveCode": false,
+  "experimentalSourceRewriting": false,
+  "viewportWidth": 1536,
+  "viewportHeight": 960,
+  "defaultCommandTimeout": 6000,
+  "trashAssetsBeforeRuns": false,
+  "numTestsKeptInMemory": 300,
+  "pageLoadTimeout" : 4000,
+  "retries": {
+    "runMode": 0,
+    "openMode": 0
+  }
+
+}
+

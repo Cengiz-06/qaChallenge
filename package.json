@@ -1,0 +1,46 @@
+{
+  "name": "instamotion-qa-challenge-cypress-cucumber-test-automation-framework",
+  "version": "1.0.1",
+  "private": false,
+  "dependencies": {
+    "@types/node": "^10.17.55",
+    "adm-zip": "^0.5.9",
+    "autoset-status-cypress-testrail-reporter": "^1.1.2",
+    "cypress-real-events": "^1.2.0",
+    "wait-on": "^5.3.0",
+    "xml-js": "^1.6.11"
+  },
+  "scripts": {
+    "open": "cypress open",
+    "smoke": "cypress-tags run --spec \"**/*.feature\" -e TAGS='@smoke' --headless --browser chrome"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/step_definitions/**/",
+    "cucumberJson": {
+      "generate": false,
+      "outputFolder": "./test-results/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^4.0.2",
+    "@types/faker": "^5.1.7",
+    "cypress": "^9.5.0",
+    "cypress-cucumber-preprocessor": "4.0.1",
+    "cypress-file-upload": "^5.0.4",
+    "mockingbird-ts": "^1.0.0",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.4.5",
+    "webpack": "4.28.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "description": "Instamotion Cypress Test Automation Framework",
+  "main": "index.js",
+  "repository": {
+    "type": "git"
+  },
+  "author": "cc",
+  "license": "ISC"
+}
